@@ -14,13 +14,9 @@ $.ajax({
     }
 })
 
-// $.ajax({
-//     type:"POST",
-//     url: "save.php",
-//     data:{
-//         nom:"Doe",
-//         prenom: "John"
-//     },
-//     dataType:"JSON",
-//     contentType:"Application/Json"
-// })
+$.ajax({
+    type:"GET",
+    url: "todo.csv",
+}).done(function(response){
+    console.log(response)
+})
